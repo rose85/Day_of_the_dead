@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>4-page website</title>
+		<link rel="stylesheet" type="text/css" href="_css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			<nav>
+				<a href="index.html" >Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html" class="selected">Gallery</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<header>
+				<h1>Art</h1>
+				<h2>& stuff</h2>
+			</header>
+			<article >
+				<h2 class="btn1">Artsy<b>fartsy</b></h2>
+				<p class="btn2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+			<footer>
+				&copy; 2014 nen Boxes. All rights reserved.
+			</footer>
+		</div>
+		<script type="text/javascript" src="_js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+			  $("header h1").click(function(){
+			    var div=$("header h1");
+			   div.css("color","#a3d0d8");		    
+			  });
+			});
+			
+			$(document).ready(function(){
+			  $("header h2").click(function(){
+			    var div=$("header h2");
+			    div.animate({opacity:'0.4'},"slow");
+			    div.animate({opacity:'0.8'},"slow");
+			  });
+			});
+
+
+			$(document).ready(function(){
+			  $(".btn2").click(function(){
+			    $("p").slideUp(2000);
+			  });
+			  $(".btn1").click(function(){
+			    $("p").slideDown(1000);
+			  });
+			});
+
+		</script>
+	</body>
+</html>
