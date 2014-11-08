@@ -161,7 +161,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 			}
 			footer{ 
 				padding-top: 102px;
-				background-color: #000;
+				background-color: transparent;
 				color: #353535;
 				text-align: center;
 			}
